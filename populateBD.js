@@ -15,12 +15,12 @@ let usuarios = [
 {id_usuario: "1235", username: "ABM", password: "145454", fecha_nacimiento: new ISODate("2010-03-17"), correo:"deg@gmail.com",telefono:1201151,dni:45444455}
 ];
 
-let eventos = [
-	{ id_evento: "ACM1PT", patrocinador:"SAGABELLA", fecha_evento: new ISODate("2009-05-17"), hora_inicio_general: new ISODate("2010-03-17"), hora_final_general: new ISODate("2010-03-18"), lugar: "SM" }
+let eventosde = [
+	{ id_evento: "ACM1PT", patrocinador:"SAGABELLA", fecha_evento: new ISODate("2009-05-17"), hora_inicio_general: new ISODate("2010-03-17"), hora_final_general: new ISODate("2010-03-18"), lugar: "SM", nombre: "VIVO X EL ROCK", descripcion: "Evento con artista invitados todos del genero musical rock", url_imagen:"https://cdne.elbocon.pe/thumbs/uploads/img/2019/10/21/vivo-x-el-rock-2019-horarios-confirmados-del-festi-196420-104609-jpg_600x0.jpg" }
 ]
 
 db.usuarios.insertMany(usuarios);
-db.eventos.insertMany(eventos);
+db.eventos.insertMany(eventosde);
 
 
 let tickets = [ 

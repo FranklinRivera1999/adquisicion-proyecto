@@ -8,4 +8,12 @@ EventoCtrl.getEventos = async (req, res)=>{
     res.json(eventos);
 };
 
+
+EventoCtrl.getEvento = async (req, res)=>{
+	const id= req.params.id;
+	console.log(id);
+	const evento = await Evento.findOne( {_id : id});
+	console.log(evento);
+	res.json(evento);
+};
 module.exports = EventoCtrl;
