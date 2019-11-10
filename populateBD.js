@@ -29,6 +29,7 @@ let eventos = [
 	{ id_evento: "00004", titulo: "SHINGEKY NO KYOJIN", descripcion: "Reunion para amantes del anime SNK y se hara eventos", url: "www.cerrano.com", patrocinador:"SAGABELLA4", fecha_evento: new ISODate("2009-05-17"), hora_inicio_general: new ISODate("2010-03-17"), hora_final_general: new ISODate("2010-03-18"), lugar: "SM" }
 ];
 
+
 let tickets = [ 
 { id_ticket: "ACMQ1120", precio: 50, puerta: "2", fila: "4", asiento: "21", _evento: "00001", _usuario: "00001" },
 { id_ticket: "ACMQ1121", precio: 70, puerta: "3", fila: "2", asiento: "11", _evento: "00002", _usuario: "00002" },

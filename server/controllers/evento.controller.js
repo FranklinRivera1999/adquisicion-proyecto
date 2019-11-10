@@ -15,5 +15,3 @@ EventoCtrl.getEvento = async (req, res)=>{
 	res.json(evento);
 };
 module.exports = EventoCtrl;
-
-
