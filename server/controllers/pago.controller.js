@@ -18,7 +18,7 @@ PagoCtrl.payme = async (req, res)=>{
  console.log("body del request",req.body);
 
 // `source` is obtained with Stripe.js; see https://stripe.com/docs/payments/cards/collecting/web#create-token
-		stripe.charges.create(
+	stripe.charges.create(
   		{
     	amount: 2000,
     	currency: 'usd',
