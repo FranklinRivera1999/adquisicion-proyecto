@@ -11,15 +11,80 @@ db.createCollection('tickets');
 db.createCollection('usuarios');
 
 
-let usuarios = [
-{id_usuario: "00001", username: "ACM1", password: "$2y$10$vqcNHh1O8nlOEJF.H/b4Nu3UDoYJuO5RELS8R3NXKZCqAZTXe.zna", fecha_nacimiento: new ISODate("2000-03-17"), correo:"abc1@gmail.com",telefono:51411511,dni:444444551},
-{id_usuario: "00002", username: "ABM2", password: "$2y$10$vqcNHh1O8nlOEJF.H/b4Nu3UDoYJuO5RELS8R3NXKZCqAZTXe.zna", fecha_nacimiento: new ISODate("2010-03-17"), correo:"deg2@gmail.com",telefono:12011512,dni:454444552},
-{id_usuario: "00003", username: "ACM3", password: "$2y$10$vqcNHh1O8nlOEJF.H/b4Nu3UDoYJuO5RELS8R3NXKZCqAZTXe.zna", fecha_nacimiento: new ISODate("2000-03-17"), correo:"abc3@gmail.com",telefono:51411513,dni:444444553},
-{id_usuario: "00004", username: "ABM4", password: "$2y$10$vqcNHh1O8nlOEJF.H/b4Nu3UDoYJuO5RELS8R3NXKZCqAZTXe.zna", fecha_nacimiento: new ISODate("2010-03-17"), correo:"deg4@gmail.com",telefono:12011514,dni:454444554},
-{id_usuario: "00005", username: "ACM5", password: "$2y$10$vqcNHh1O8nlOEJF.H/b4Nu3UDoYJuO5RELS8R3NXKZCqAZTXe.zna", fecha_nacimiento: new ISODate("2000-03-17"), correo:"abc5@gmail.com",telefono:51411515,dni:444444555},
-{id_usuario: "00006", username: "ABM6", password: "$2y$10$vqcNHh1O8nlOEJF.H/b4Nu3UDoYJuO5RELS8R3NXKZCqAZTXe.zna", fecha_nacimiento: new ISODate("2010-03-17"), correo:"deg6@gmail.com",telefono:12011516,dni:454444556},
-{id_usuario: "00007", username: "ACM7", password: "$2y$10$vqcNHh1O8nlOEJF.H/b4Nu3UDoYJuO5RELS8R3NXKZCqAZTXe.zna", fecha_nacimiento: new ISODate("2000-03-17"), correo:"abc7@gmail.com",telefono:51411517,dni:444444557},
-{id_usuario: "00008", username: "ABM8", password: "$2y$10$vqcNHh1O8nlOEJF.H/b4Nu3UDoYJuO5RELS8R3NXKZCqAZTXe.zna", fecha_nacimiento: new ISODate("2010-03-17"), correo:"deg8@gmail.com",telefono:12011518,dni:454444558}
+let usuarios = [{
+    id_usuario: "00001", 
+    username: "ACM1", 
+    password: "$2y$10$vqcNHh1O8nlOEJF.H/b4Nu3UDoYJuO5RELS8R3NXKZCqAZTXe.zna", 
+    fecha_nacimiento: new ISODate("2000-03-17"),
+    correo:"harold1a96@gmail.com",
+    telefono:51411511,
+    dni:444444551,
+    _eventos: ["00001"]
+},
+{
+    id_usuario: "00002", 
+    username: "ABM2", 
+    password: "$2y$10$vqcNHh1O8nlOEJF.H/b4Nu3UDoYJuO5RELS8R3NXKZCqAZTXe.zna", 
+    fecha_nacimiento: new ISODate("2010-03-17"), 
+    correo:"deg2@gmail.com",
+    telefono:12011512,
+    dni:454444552,
+    _eventos: ["00002"]
+},
+{
+    id_usuario: "00003", 
+    username: "ACM3", 
+    password: "$2y$10$vqcNHh1O8nlOEJF.H/b4Nu3UDoYJuO5RELS8R3NXKZCqAZTXe.zna", 
+    fecha_nacimiento: new ISODate("2000-03-17"), 
+    correo:"abc3@gmail.com",
+    telefono:51411513,
+    dni:444444553
+},
+{
+    id_usuario: "00004", 
+    username: "ABM4", 
+    password: "$2y$10$vqcNHh1O8nlOEJF.H/b4Nu3UDoYJuO5RELS8R3NXKZCqAZTXe.zna", 
+    fecha_nacimiento: new ISODate("2010-03-17"), 
+    correo:"deg4@gmail.com",
+    telefono:12011514,
+    dni:454444554
+},
+{
+    id_usuario: "00005", 
+    username: "ACM5", 
+    password: "$2y$10$vqcNHh1O8nlOEJF.H/b4Nu3UDoYJuO5RELS8R3NXKZCqAZTXe.zna", 
+    fecha_nacimiento: new ISODate("2000-03-17"), 
+    correo:"abc5@gmail.com",
+    telefono:51411515,
+    dni:444444555
+},
+{
+    id_usuario: "00006", 
+    username: "ABM6", 
+    password: "$2y$10$vqcNHh1O8nlOEJF.H/b4Nu3UDoYJuO5RELS8R3NXKZCqAZTXe.zna", 
+    fecha_nacimiento: new ISODate("2010-03-17"), 
+    correo:"deg6@gmail.com",
+    telefono:12011516,
+    dni:454444556
+},
+{
+    id_usuario: "00007", 
+    username: "ACM7", 
+    password: "$2y$10$vqcNHh1O8nlOEJF.H/b4Nu3UDoYJuO5RELS8R3NXKZCqAZTXe.zna", 
+    fecha_nacimiento: new ISODate("2000-03-17"), 
+    correo:"abc7@gmail.com",
+    telefono:51411517,
+    dni:444444557
+},
+{
+    id_usuario: "00008", 
+    username: "ABM8", 
+    password: "$2y$10$vqcNHh1O8nlOEJF.H/b4Nu3UDoYJuO5RELS8R3NXKZCqAZTXe.zna", 
+    fecha_nacimiento: new ISODate("2010-03-17"), 
+    correo:"deg8@gmail.com",
+    telefono:12011518,
+    dni:454444558
+}
 ];
 
 /*let eventos = [
