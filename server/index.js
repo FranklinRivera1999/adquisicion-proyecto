@@ -1,4 +1,5 @@
 const express = require ('express');
+//const stripe = require("stripe")(keySecret);
 const app = express();
 const morgan = require('morgan');
 const cors = require('cors');
@@ -15,6 +16,7 @@ app.use('/api/usuario',require('./routes/usuario.route'));
 app.use('/api/evento',require('./routes/evento.route'));
 app.use('/api/ticket',require('./routes/ticket.route'));
 app.use('/login',require('./routes/auth.route'));
+app.use('/payme',require('./routes/pago.route'));
 
 //Starting the server
 app.listen(app.get('port'), ()=> {

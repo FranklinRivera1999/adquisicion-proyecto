@@ -13,6 +13,7 @@ const EventoSchema = new Schema({
     hora_final_general: {type: Date},
     lugar: {type: String},
     url: {type: String},
+    categoria: [{type: String}],
     descripcion: {type: String}
 });
 

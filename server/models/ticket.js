@@ -7,6 +7,7 @@ const TicketSchema = new Schema({
     puerta: {type: String},
     fila: {type: String},
     asiento: {type: String},
+    estado: {type: String},
     _evento: {type: String},
     _usuario: {type: String}
 });
