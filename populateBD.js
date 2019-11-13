@@ -12,79 +12,80 @@ db.createCollection('usuarios');
 
 
 let usuarios = [{
-    id_usuario: "00001", 
-    username: "ACM1", 
-    password: "$2y$10$vqcNHh1O8nlOEJF.H/b4Nu3UDoYJuO5RELS8R3NXKZCqAZTXe.zna", 
-    fecha_nacimiento: new ISODate("2000-03-17"),
-    correo:"harold1a96@gmail.com",
-    telefono:51411511,
-    dni:444444551,
-    _eventos: ["00001"]
-},
-{
-    id_usuario: "00002", 
-    username: "ABM2", 
-    password: "$2y$10$vqcNHh1O8nlOEJF.H/b4Nu3UDoYJuO5RELS8R3NXKZCqAZTXe.zna", 
-    fecha_nacimiento: new ISODate("2010-03-17"), 
-    correo:"deg2@gmail.com",
-    telefono:12011512,
-    dni:454444552,
-    _eventos: ["00002"]
-},
-{
-    id_usuario: "00003", 
-    username: "ACM3", 
-    password: "$2y$10$vqcNHh1O8nlOEJF.H/b4Nu3UDoYJuO5RELS8R3NXKZCqAZTXe.zna", 
-    fecha_nacimiento: new ISODate("2000-03-17"), 
-    correo:"abc3@gmail.com",
-    telefono:51411513,
-    dni:444444553
-},
-{
-    id_usuario: "00004", 
-    username: "ABM4", 
-    password: "$2y$10$vqcNHh1O8nlOEJF.H/b4Nu3UDoYJuO5RELS8R3NXKZCqAZTXe.zna", 
-    fecha_nacimiento: new ISODate("2010-03-17"), 
-    correo:"deg4@gmail.com",
-    telefono:12011514,
-    dni:454444554
-},
-{
-    id_usuario: "00005", 
-    username: "ACM5", 
-    password: "$2y$10$vqcNHh1O8nlOEJF.H/b4Nu3UDoYJuO5RELS8R3NXKZCqAZTXe.zna", 
-    fecha_nacimiento: new ISODate("2000-03-17"), 
-    correo:"abc5@gmail.com",
-    telefono:51411515,
-    dni:444444555
-},
-{
-    id_usuario: "00006", 
-    username: "ABM6", 
-    password: "$2y$10$vqcNHh1O8nlOEJF.H/b4Nu3UDoYJuO5RELS8R3NXKZCqAZTXe.zna", 
-    fecha_nacimiento: new ISODate("2010-03-17"), 
-    correo:"deg6@gmail.com",
-    telefono:12011516,
-    dni:454444556
-},
-{
-    id_usuario: "00007", 
-    username: "ACM7", 
-    password: "$2y$10$vqcNHh1O8nlOEJF.H/b4Nu3UDoYJuO5RELS8R3NXKZCqAZTXe.zna", 
-    fecha_nacimiento: new ISODate("2000-03-17"), 
-    correo:"abc7@gmail.com",
-    telefono:51411517,
-    dni:444444557
-},
-{
-    id_usuario: "00008", 
-    username: "ABM8", 
-    password: "$2y$10$vqcNHh1O8nlOEJF.H/b4Nu3UDoYJuO5RELS8R3NXKZCqAZTXe.zna", 
-    fecha_nacimiento: new ISODate("2010-03-17"), 
-    correo:"deg8@gmail.com",
-    telefono:12011518,
-    dni:454444558
-}
+        id_usuario: "00001",
+        username: "ACM1",
+        password: "$2y$10$vqcNHh1O8nlOEJF.H/b4Nu3UDoYJuO5RELS8R3NXKZCqAZTXe.zna",
+        fecha_nacimiento: new ISODate("2000-03-17"),
+        correo: "harold1a96@gmail.com",
+        telefono: 51411511,
+        dni: 444444551,
+        _eventos: ["00001"]
+    },
+    {
+        id_usuario: "00002",
+        username: "ABM2",
+        password: "$2y$10$vqcNHh1O8nlOEJF.H/b4Nu3UDoYJuO5RELS8R3NXKZCqAZTXe.zna",
+        fecha_nacimiento: new ISODate("2010-03-17"),
+        correo: "fr3dy.ccahuana@gmail.com",
+        telefono: 12011512,
+        dni: 454444552,
+        _eventos: ["00002"]
+    },
+    {
+        id_usuario: "00003",
+        username: "ACM3",
+        password: "$2y$10$vqcNHh1O8nlOEJF.H/b4Nu3UDoYJuO5RELS8R3NXKZCqAZTXe.zna",
+        fecha_nacimiento: new ISODate("2000-03-17"),
+        correo: "junyorar98@gmail.com",
+        telefono: 51411513,
+        dni: 444444553
+    },
+    {
+        id_usuario: "00004",
+        username: "ABM4",
+        password: "$2y$10$vqcNHh1O8nlOEJF.H/b4Nu3UDoYJuO5RELS8R3NXKZCqAZTXe.zna",
+        fecha_nacimiento: new ISODate("2010-03-17"),
+        correo: "pdelacruzv@unmsm.edu.pe",
+        _eventos: ["00001"],
+        telefono: 12011514,
+        dni: 454444554
+    },
+    {
+        id_usuario: "00005",
+        username: "ACM5",
+        password: "$2y$10$vqcNHh1O8nlOEJF.H/b4Nu3UDoYJuO5RELS8R3NXKZCqAZTXe.zna",
+        fecha_nacimiento: new ISODate("2000-03-17"),
+        correo: "abc5@gmail.com",
+        telefono: 51411515,
+        dni: 444444555
+    },
+    {
+        id_usuario: "00006",
+        username: "ABM6",
+        password: "$2y$10$vqcNHh1O8nlOEJF.H/b4Nu3UDoYJuO5RELS8R3NXKZCqAZTXe.zna",
+        fecha_nacimiento: new ISODate("2010-03-17"),
+        correo: "deg6@gmail.com",
+        telefono: 12011516,
+        dni: 454444556
+    },
+    {
+        id_usuario: "00007",
+        username: "ACM7",
+        password: "$2y$10$vqcNHh1O8nlOEJF.H/b4Nu3UDoYJuO5RELS8R3NXKZCqAZTXe.zna",
+        fecha_nacimiento: new ISODate("2000-03-17"),
+        correo: "abc7@gmail.com",
+        telefono: 51411517,
+        dni: 444444557
+    },
+    {
+        id_usuario: "00008",
+        username: "ABM8",
+        password: "$2y$10$vqcNHh1O8nlOEJF.H/b4Nu3UDoYJuO5RELS8R3NXKZCqAZTXe.zna",
+        fecha_nacimiento: new ISODate("2010-03-17"),
+        correo: "deg8@gmail.com",
+        telefono: 12011518,
+        dni: 454444558
+    }
 ];
 
 /*let eventos = [
@@ -103,7 +104,7 @@ let eventos = [{
         fecha_evento: new ISODate("2019-01-16"),
         hora_inicio_general: new ISODate("2019-11-16"),
         hora_final_general: new ISODate("2019-11-30"),
-        categoria: ["concierto","cantante","pop latino", "balada romantica"],
+        categoria: ["concierto", "cantante", "pop latino", "balada romantica"],
         lugar: "Estacion de Barranco"
     },
     {
@@ -115,7 +116,7 @@ let eventos = [{
         fecha_evento: new ISODate("2019-11-21"),
         hora_inicio_general: new ISODate("2019-11-21"),
         hora_final_general: new ISODate("2019-11-22"),
-        categoria: ["standup","comedia","chistes","monologo"],
+        categoria: ["standup", "comedia", "chistes", "monologo"],
         lugar: "Centro de Convenciones del Hotel María Angola de Miraflores"
     },
     {
@@ -127,7 +128,7 @@ let eventos = [{
         fecha_evento: new ISODate("2019-11-14"),
         hora_inicio_general: new ISODate("2019-11-14"),
         hora_final_general: new ISODate("2019-11-15"),
-        categoria: ["concierto","pop latino", "reggaeton", "cantante"],
+        categoria: ["concierto", "pop latino", "reggaeton", "cantante"],
         lugar: "Sargento Pimienta - Av. Francisco Bolognesi 757, Barranco"
     },
     {
@@ -139,7 +140,7 @@ let eventos = [{
         fecha_evento: new ISODate("2019-10-15"),
         hora_inicio_general: new ISODate("2019-10-15"),
         hora_final_general: new ISODate("2019-10-16"),
-        categoria: ["arte","proyeccion","museo arte"],
+        categoria: ["arte", "proyeccion", "museo arte"],
         lugar: "Planetario Digital de Lima - Morro Solar de Chorrillos - Cruz de Luz"
     }, {
         id_evento: "00005",
@@ -150,7 +151,7 @@ let eventos = [{
         fecha_evento: new ISODate("2009-12-07"),
         hora_inicio_general: new ISODate("2019-12-07"),
         hora_final_general: new ISODate("2019-12-07"),
-        categoria: ["gastronomía", "comida","festival"],
+        categoria: ["gastronomía", "comida", "festival"],
         lugar: "Domos Art Costa Verde San Miguel 15086"
     },
     {
@@ -162,20 +163,20 @@ let eventos = [{
         fecha_evento: new ISODate("2019-10-24"),
         hora_inicio_general: new ISODate("2019-10-24"),
         hora_final_general: new ISODate("2019-10-24"),
-        categoria: ["djs","reunion", "gastronomía"],
+        categoria: ["djs", "reunion", "gastronomía"],
         lugar: "Fundo Mamacona - Parcela #3 Alameda Mamacona, Lurín\nParcela #3, Alameda Mamacona, Lurín 15841"
     }
 ];
 
 
 
-let tickets = [ 
-{ id_ticket: "ACMQ1120", precio: 50, puerta: "2", fila: "4", asiento: "21", estado: "libre", _evento: "00001", _usuario: "00001" },
-{ id_ticket: "ACMQ1121", precio: 70, puerta: "3", fila: "2", asiento: "11", estado: "libre", _evento: "00002", _usuario: "00002" },
-{ id_ticket: "ACMQ1122", precio: 40, puerta: "4", fila: "3", asiento: "31", estado: "libre", _evento: "00003", _usuario: "00003" },
-{ id_ticket: "ACMQ1123", precio: 30, puerta: "5", fila: "1", asiento: "41", estado: "libre", _evento: "00004", _usuario: "00004" },
-{ id_ticket: "ACMQ1124", precio: 20, puerta: "6", fila: "4", asiento: "51", estado: "libre", _evento: "00003", _usuario: "00005" },
-{ id_ticket: "ACMQ1125", precio: 10, puerta: "7", fila: "5", asiento: "61", estado: "libre", _evento: "00002", _usuario: "00006" }
+let tickets = [
+    { id_ticket: "ACMQ1120", precio: 50, puerta: "2", fila: "4", asiento: "21", estado: "libre", _evento: "00001", _usuario: "00001" },
+    { id_ticket: "ACMQ1121", precio: 70, puerta: "3", fila: "2", asiento: "11", estado: "libre", _evento: "00002", _usuario: "00002" },
+    { id_ticket: "ACMQ1122", precio: 40, puerta: "4", fila: "3", asiento: "31", estado: "libre", _evento: "00003", _usuario: "00003" },
+    { id_ticket: "ACMQ1123", precio: 30, puerta: "5", fila: "1", asiento: "41", estado: "libre", _evento: "00004", _usuario: "00004" },
+    { id_ticket: "ACMQ1124", precio: 20, puerta: "6", fila: "4", asiento: "51", estado: "libre", _evento: "00003", _usuario: "00005" },
+    { id_ticket: "ACMQ1125", precio: 10, puerta: "7", fila: "5", asiento: "61", estado: "libre", _evento: "00002", _usuario: "00006" }
 ];
 
 
