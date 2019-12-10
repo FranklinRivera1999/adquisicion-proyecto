@@ -14,4 +14,14 @@ EventoCtrl.getEvento = async (req, res)=>{
 	console.log(evento);
 	res.json(evento);
 };
+
+EventoCtrl.getEventosR =  async (req, res)=>{
+	console.log("-------------------------111---------------------------------------------------");
+    const eventosR =  await req.session.user._eventos;
+    console.log("AQUI LLEGAN LOS RECOMENDADOS");
+    console.log(eventosR);
+    console.log("AQUI SALEN");
+    res.json(eventosR);
+};
+
 module.exports = EventoCtrl;

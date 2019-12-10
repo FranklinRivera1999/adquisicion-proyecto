@@ -17,7 +17,8 @@ session.crearSession = async (req, res)=>{
 	    	res.send("No se encontro usuario");
 	    }
 	    else if (bcrypt.compareSync(req.body.password, usuario.password)){
-	    	res.send(usuario);	
+	    	req.session.user = usuario;
+	    	res.send(usuario);
 	    }
 	    else{
 	    	console.log("password incorrecto");

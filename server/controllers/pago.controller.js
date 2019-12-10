@@ -68,7 +68,7 @@ PagoCtrl.payme = async(req, res) => {
             amount: 2000,
             currency: 'usd',
             source: 'tok_visa',
-            description: 'Charge for jenny.rosen@example.com',
+            description: 'Pago realizado por la compra de tickets',
         },
         function(err, charge) {
             // asynchronously called
@@ -90,13 +90,15 @@ PagoCtrl.payme = async(req, res) => {
 
         const msg = {
             to: req.body.card.name,
-            from: 'tuticket@example.com',
+            from: 'TuEntry@example.com',
             subject: 'Aviso de compra',
             text: 'Su compra fue exitosa',
-            html: '<strong>Recomendamos los siguientes shows</strong>' + "<br>" + `"${eventos_id.toString()}"`
+            html: '<strong>Usted ha comprado tickets para el evento...!</strong>' + "<br>" + "<h2>" + `${eventos_id[0].titulo}` + "</h2>" + "<br>" + '<img src="'+ `${eventos_id[0].url}` + '" alt="Smiley face" height="90" width="160">' + "<br>" + "<p>"  + `${eventos_id[0].descripcion}` +"</p>" + "<h3> Tal vez le interesen los siguientes eventos </h3>" +"<h2>" + `${eventos_id[1].titulo}` + "</h2>" + "<br>" + '<img src="'+ `${eventos_id[1].url}` + '" alt="Smiley face" height="90" width="160">' + "<br>" + "<p>"  + `${eventos_id[1].descripcion}` +"</p>"   
+
         };
 
-        await sgMail.send(msg);
+    await sgMail.send(msg);
+    console.log("se envio el msg");
     } catch (err) {
 
         console.log("Ocurrio un error! Y No se envio el email");

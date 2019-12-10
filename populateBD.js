@@ -10,6 +10,8 @@ db.createCollection('tickets');
 //let usuario= db.collection('usuarios');
 db.createCollection('usuarios');
 
+db.createCollection('pagos');
+
 
 let usuarios = [{
         id_usuario: "00001",
